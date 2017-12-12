@@ -22,7 +22,8 @@ var ProjectSchema = new Schema({
     level: {
         type: Number,
         default: 1
-    }
+    },
+    versionKey: false
 });
 
 module.exports = mongoose.model('Project', ProjectSchema);

@@ -14,7 +14,8 @@ var ItemSchema = new Schema({
     bonus:  {
         type: {},
         default: {}
-    }
+    },
+    versionKey: false
 });
 
 module.exports = mongoose.model('Item', ItemSchema);
