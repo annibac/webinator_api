@@ -43,6 +43,6 @@ exports.delete_a_project = function(req, res) {
     }, function(err, project) {
         if (err)
             res.send(err);
-        res.json({ message: 'Task successfully deleted' });
+        res.json({ message: 'Project successfully deleted' });
     });
 };

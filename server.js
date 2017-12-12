@@ -3,6 +3,7 @@ var express = require('express'),
     port = process.env.PORT || 3000;
     mongoose = require('mongoose'),
     Projects = require('./api/models/webinatorApiModel'), //created model loading here
+    Items = require('./api/models/webinatorItemsApiModel'),
     bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
