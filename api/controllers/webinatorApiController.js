@@ -29,13 +29,13 @@ exports.read_a_project = function(req, res) {
     });
 };
 
-exports.update_a_project = function(req, res) {
-    Project.findOneAndUpdate({_id: req.params.projectId}, req.body, {new: true}, function(err, project) {
-        if (err)
-            res.send(err);
-        res.json(project);
-    });
-};
+// exports.update_a_project = function(req, res) {
+//     Project.findOneAndUpdate({_id: req.params.projectId}, req.body, {new: true}, function(err, project) {
+//         if (err)
+//             res.send(err);
+//         res.json(project);
+//     });
+// };
 
 exports.delete_a_project = function(req, res) {
     Project.remove({

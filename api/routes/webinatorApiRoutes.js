@@ -10,7 +10,7 @@ module.exports = function(app) {
 
     app.route('/projects/:projectId')
         .get(webinator.read_a_project)
-        .put(webinator.update_a_project)
+        // .put(webinator.update_a_project)
         .delete(webinator.delete_a_project);
 
     app.route('/items')
